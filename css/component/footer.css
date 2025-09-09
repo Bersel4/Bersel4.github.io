@@ -1,0 +1,35 @@
+ /* Подвал */
+      footer {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 2rem;
+      }
+
+      .social-links {
+        margin-top: 1rem;
+      }
+
+      .social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5rem;
+      }
+
+      /* Адаптивность */
+      @media (max-width: 768px) {
+        .timeline::before {
+          left: 31px;
+        }
+
+        .timeline-item {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+        }
+
+        .timeline-item:nth-child(even) {
+          left: 0;
+        }
+      }

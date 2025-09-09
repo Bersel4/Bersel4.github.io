@@ -1,0 +1,25 @@
+#scroll-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 400px;
+  height: 600px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 8px;
+  opacity: 0; /* Начальное состояние — прозрачность 0 */
+  transform: translateY(20px); /* Начальное смещение вниз */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Класс, который добавляется при появлении в зоне видимости */
+.box.active {
+  opacity: 1;
+  transform: translateY(0);
+}
